@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.documentElement.classList.add('js');</script>
+    <title>La Maison — Le Prénom, restaurant aux Sables-d'Olonne</title>
+    <meta name="description" content="L'esprit du Prénom aux Sables-d'Olonne : une cuisine de saison faite maison, une ardoise qui change chaque jour, et une convivialité où l'on s'appelle par son prénom.">
+    <meta name="keywords" content="Le Prénom, restaurant Sables d'Olonne, bistronomie, cuisine maison, ardoise, convivialité, Vendée">
+    <meta name="author" content="Le Prénom">
+    <!-- TEMPORAIRE : bloque l'indexation Google pendant la phase démo. À retirer une fois le site validé. -->
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="canonical" href="https://florian-teis.github.io/le-prenom/lamaison.html">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Le Prénom">
+    <meta property="og:url" content="https://florian-teis.github.io/le-prenom/lamaison.html">
+    <meta property="og:title" content="La Maison — Le Prénom, restaurant aux Sables-d'Olonne">
+    <meta property="og:description" content="Une cuisine de saison faite maison et une convivialité où l'on s'appelle par son prénom.">
+    <meta property="og:image" content="https://florian-teis.github.io/le-prenom/assets/og-image.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="La Maison — Le Prénom">
+    <meta name="twitter:description" content="L'esprit du Prénom : cuisine de saison faite maison, convivialité, aux Sables-d'Olonne.">
+    <meta name="twitter:image" content="https://florian-teis.github.io/le-prenom/assets/og-image.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "La Maison — Le Prénom",
+      "url": "https://florian-teis.github.io/le-prenom/lamaison.html",
+      "about": {
+        "@type": "Restaurant",
+        "name": "Le Prénom",
+        "url": "https://florian-teis.github.io/le-prenom/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "261 Avenue François Mitterrand",
+          "addressLocality": "Les Sables-d'Olonne",
+          "postalCode": "85100",
+          "addressCountry": "FR"
+        }
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://florian-teis.github.io/le-prenom/"},
+        {"@type": "ListItem", "position": 2, "name": "La Maison", "item": "https://florian-teis.github.io/le-prenom/lamaison.html"}
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <button class="nav-burger" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links nav-left">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="lamaison.html" class="active">La Maison</a></li>
+        </ul>
+        <a href="index.html" class="nav-logo" aria-label="Le Prénom — Accueil">
+            <img class="logo-light" src="assets/logo-white.png" alt="Le Prénom">
+            <img class="logo-dark" src="assets/logo-color.png" alt="">
+        </a>
+        <ul class="nav-links nav-right">
+            <li><a href="carte.html">La Carte</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="nav-mobile">
+            <a href="index.html">Accueil</a>
+            <a href="lamaison.html" class="active">La Maison</a>
+            <a href="carte.html">La Carte</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="#reserver" class="btn" data-reserve>Réserver une table</a>
+        </div>
+    </nav>
+
+    <!-- SUB-HERO -->
+    <header class="subhero">
+        <div class="subhero-image" data-parallax style="background-image: url('assets/maison-hero.jpg');"></div>
+        <div class="subhero-content">
+            <p class="subhero-overline fade-up">Le Prénom</p>
+            <h1 class="subhero-title">
+                <span class="mask-reveal"><span>La</span></span>
+                <span class="mask-reveal" style="--reveal-delay: 0.15s"><span><em>Maison</em></span></span>
+            </h1>
+        </div>
+    </header>
+
+    <!-- INTRO -->
+    <section class="chef-intro">
+        <p class="chef-intro-overline fade-up">L'esprit</p>
+        <blockquote class="chef-intro-quote fade-up" style="--reveal-delay: 0.15s">
+            « On a choisi un nom qui dit tout :<br>
+            ici, <em>on s'appelle par son prénom.</em> »
+        </blockquote>
+        <p class="chef-intro-author fade-up" style="--reveal-delay: 0.4s">L'équipe du Prénom</p>
+    </section>
+
+    <!-- SPLIT 1 — L'envie -->
+    <section class="chef-split">
+        <div class="chef-split-inner">
+            <div class="chef-split-image scale-reveal">
+                <img src="assets/maison-split-1.jpg" alt="En cuisine au Prénom" class="scale-reveal-img">
+            </div>
+            <div class="chef-split-content">
+                <p class="chef-split-overline fade-up">L'envie</p>
+                <h2 class="chef-split-title fade-up" style="--reveal-delay: 0.1s">
+                    Cuisiner ce qui<br><em>fait plaisir</em>
+                </h2>
+                <div class="chef-split-text">
+                    <p class="lead fade-up" style="--reveal-delay: 0.2s">
+                        Au Prénom, on ne cherche pas la démonstration : on cherche
+                        le plaisir, le vrai, celui d'une assiette généreuse et juste.
+                    </p>
+                    <p class="fade-up" style="--reveal-delay: 0.3s">
+                        Des cuissons justes, des sauces qui ont du goût, des assiettes
+                        qui donnent envie : on dresse avec soin et on envoie chaque
+                        plat avec la même attention, service après service.
+                    </p>
+                    <p class="fade-up" style="--reveal-delay: 0.4s">
+                        Une cuisine bistronomique, accessible et soignée, pensée pour
+                        être partagée : entre amis, en famille ou entre habitués.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FULL BLEED 1 -->
+    <section class="chef-fullbleed">
+        <div class="chef-fullbleed-image" data-parallax style="background-image: url('assets/maison-fullbleed-1.jpg');"></div>
+        <div class="chef-fullbleed-overlay"></div>
+        <div class="chef-fullbleed-quote">
+            <blockquote class="fade-up">
+                « L'ardoise se réécrit presque chaque jour.<br>
+                <em>C'est le marché qui commande.</em> »
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- SPLIT 2 — Le produit -->
+    <section class="chef-split reverse">
+        <div class="chef-split-inner">
+            <div class="chef-split-image scale-reveal">
+                <img src="assets/maison-split-2.jpg" alt="Cuisson au piano" class="scale-reveal-img">
+            </div>
+            <div class="chef-split-content">
+                <p class="chef-split-overline fade-up">Le produit</p>
+                <h2 class="chef-split-title fade-up" style="--reveal-delay: 0.1s">
+                    Le frais, le <em>juste</em>,<br>le vrai
+                </h2>
+                <div class="chef-split-text">
+                    <p class="fade-up" style="--reveal-delay: 0.2s">
+                        Tout commence au petit matin : à la criée, sur les étals,
+                        au contact de celles et ceux qui produisent. On choisit
+                        nous-mêmes, on prend le temps, et on écarte ce qui ne nous
+                        convainc pas.
+                    </p>
+                    <p class="fade-up" style="--reveal-delay: 0.3s">
+                        Selon la marée et la saison, certains plats apparaissent une
+                        semaine puis s'effacent. C'est cette part d'imprévu qui tient
+                        la cuisine en éveil, et qui fait revenir, encore et encore.
+                    </p>
+                    <p class="fade-up" style="--reveal-delay: 0.4s">
+                        Une contrainte choisie, qui oblige à rester créatif et à
+                        cuisiner, jour après jour, ce qu'il y a de meilleur à l'instant.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOTRE ENGAGEMENT (local · de saison · fait maison) -->
+    <section class="valeurs">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-overline center fade-up">Notre engagement</p>
+                <h2 class="section-title fade-up" style="--reveal-delay: 0.1s">Local, de saison,<br><em>fait maison</em></h2>
+            </div>
+            <div class="valeurs-grid">
+                <article class="valeur fade-up" style="--reveal-delay: 0.1s">
+                    <span class="valeur-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-8"/><path d="M12 13c0-3.3 2.7-6 6-6 0 3.3-2.7 6-6 6z"/><path d="M12 15c0-2.8-2.2-5-5-5 0 2.8 2.2 5 5 5z"/></svg></span>
+                    <h3 class="valeur-title">Des produits du coin</h3>
+                    <p class="valeur-text">Poissons de la criée des Sables, légumes des maraîchers et viandes du terroir vendéen. On privilégie le circuit court et les producteurs voisins.</p>
+                </article>
+                <article class="valeur fade-up" style="--reveal-delay: 0.25s">
+                    <span class="valeur-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></svg></span>
+                    <h3 class="valeur-title">Au rythme des saisons</h3>
+                    <p class="valeur-text">On cuisine ce qui est bon, au bon moment. Jamais tout à fait la même chose d'une semaine à l'autre.</p>
+                </article>
+                <article class="valeur fade-up" style="--reveal-delay: 0.4s">
+                    <span class="valeur-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5L12 4l9 7.5"/><path d="M5.5 10v9.5h13V10"/><path d="M10 19.5v-5h4v5"/></svg></span>
+                    <h3 class="valeur-title">Tout fait maison</h3>
+                    <p class="valeur-text">Des sauces aux desserts, tout est préparé sur place chaque jour, à partir de produits frais.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FULL BLEED 2 -->
+    <section class="chef-fullbleed">
+        <div class="chef-fullbleed-image" data-parallax style="background-image: url('assets/maison-fullbleed-2.jpg');"></div>
+        <div class="chef-fullbleed-overlay"></div>
+        <div class="chef-fullbleed-quote">
+            <blockquote class="fade-up">
+                « On vient pour l'assiette.<br>
+                On revient pour <em>l'ambiance.</em> »
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- SPLIT 3 — L'accueil -->
+    <section class="chef-split">
+        <div class="chef-split-inner">
+            <div class="chef-split-image scale-reveal">
+                <img src="assets/maison-split-3.jpg" alt="L'ardoise du jour" class="scale-reveal-img">
+            </div>
+            <div class="chef-split-content">
+                <p class="chef-split-overline fade-up">L'accueil</p>
+                <h2 class="chef-split-title fade-up" style="--reveal-delay: 0.1s">
+                    Par votre<br><em>prénom</em>
+                </h2>
+                <div class="chef-split-text">
+                    <p class="fade-up" style="--reveal-delay: 0.2s">
+                        C'est notre signature : pas de « monsieur », pas de « madame ».
+                        On réserve à votre prénom, on vous reçoit à votre prénom,
+                        et l'on s'en souvient la fois suivante.
+                    </p>
+                    <p class="fade-up" style="--reveal-delay: 0.3s">
+                        Du plus jeune au doyen de nos habitués (un fidèle de 102 ans
+                        pousse encore la porte chaque semaine), chacun se sent ici
+                        un peu chez lui.
+                    </p>
+                    <p class="fade-up" style="--reveal-delay: 0.4s">
+                        Une salle lumineuse, une terrasse aux beaux jours, et un espace
+                        privatisable jusqu'à 40 couverts pour vos séminaires et repas
+                        de groupe : Le Prénom, c'est un endroit où l'on se sent chez soi.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLOSING -->
+    <section class="chef-closing">
+        <p class="chef-closing-text fade-up">
+            « Le mieux, c'est encore de pousser la porte.<br>
+            Le reste appartient à la table. »
+        </p>
+        <p class="fade-up" style="--reveal-delay: 0.2s">
+            <a href="carte.html" class="btn">Découvrir la carte</a>
+        </p>
+    </section>
+
+    <!-- PIED DE PAGE -->
+    <footer class="footer" id="contact">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="nav-logo" aria-label="Le Prénom"><img src="assets/logo-white.png" alt="Le Prénom"></a>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/restaurantleprenom/" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s0 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.9.07s-3.63 0-4.9-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 01-1.38-.9 3.7 3.7 0 01-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.21 15.6 2.2 15.2 2.2 12s0-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.4 2.21 8.8 2.2 12 2.2zm0 1.8c-3.15 0-3.52.01-4.76.07-.9.04-1.38.19-1.7.32-.43.16-.74.36-1.06.68-.32.32-.52.63-.68 1.06-.13.32-.28.8-.32 1.7C3.21 8.48 3.2 8.85 3.2 12s.01 3.52.07 4.76c.04.9.19 1.38.32 1.7.16.43.36.74.68 1.06.32.32.63.52 1.06.68.32.13.8.28 1.7.32 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c.9-.04 1.38-.19 1.7-.32.43-.16.74-.36 1.06-.68.32-.32.52-.63.68-1.06.13-.32.28-.8.32-1.7.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.04-.9-.19-1.38-.32-1.7a2.85 2.85 0 00-.68-1.06 2.85 2.85 0 00-1.06-.68c-.32-.13-.8-.28-1.7-.32C15.52 4.01 15.15 4 12 4zm0 3.06A4.94 4.94 0 1112 17a4.94 4.94 0 010-9.88zm0 1.8a3.14 3.14 0 100 6.28 3.14 3.14 0 000-6.28zm5.14-.96a1.15 1.15 0 110 2.3 1.15 1.15 0 010-2.3z"/></svg>
+                    </a>
+                    <a href="https://www.facebook.com/RestaurantLePrenom/" target="_blank" rel="noopener" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5h2.5V5.5H14c-2 0-3.4 1.5-3.4 3.6v1.6H8.3V14h2.3v6h3v-6h2.4l.4-3.3h-2.8V9.3c0-.5.3-.8.9-.8z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Adresse</h4>
+                <ul>
+                    <li>261 Avenue François Mitterrand</li>
+                    <li>85100 Les Sables-d'Olonne</li>
+                    <li style="margin-top: 1rem;">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Le+Pr%C3%A9nom+261+Avenue+Fran%C3%A7ois+Mitterrand+Les+Sables-d%27Olonne" target="_blank" rel="noopener">Itinéraire →</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Horaires</h4>
+                <ul>
+                    <li>Midi : <span class="accent">7j/7</span>, de 12h à 14h30</li>
+                    <li>Soir : ven. &amp; sam., de 19h à 22h</li>
+                    <li style="margin-top: 1rem; color: rgba(255,255,255,0.5);">Réservation conseillée</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+33767252031">07 67 25 20 31</a></li>
+                    <li style="margin-top: 1rem;">
+                        <a href="#reserver" class="link-discrete" data-reserve>Réserver une table</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Le Prénom · Tous droits réservés</p>
+            <p>Les Sables-d'Olonne · Vendée</p>
+        </div>
+    </footer>
+
+    <!-- Bouton flottant « Réserver une table » -->
+    <a href="#reserver" class="reserve-fab" data-reserve aria-label="Réserver une table">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1V3a1 1 0 0 1 1-1zM5 9v10h14V9H5z"/></svg>
+        <span>Réserver une table</span>
+    </a>
+
+    <script>
+        const nav = document.querySelector('.nav');
+        const setNav = () => nav.classList.toggle('scrolled', window.scrollY > 70);
+        window.addEventListener('scroll', setNav, { passive: true });
+        setNav();
+
+        const burger = document.querySelector('.nav-burger');
+        burger.addEventListener('click', () => {
+            const open = nav.classList.toggle('open');
+            burger.classList.toggle('open', open);
+            burger.setAttribute('aria-expanded', open);
+            document.body.style.overflow = open ? 'hidden' : '';
+        });
+        document.querySelectorAll('.nav-mobile a').forEach(a => a.addEventListener('click', () => {
+            nav.classList.remove('open'); burger.classList.remove('open'); document.body.style.overflow = '';
+        }));
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); }
+            });
+        }, { threshold: 0.15, rootMargin: '0px 0px -80px 0px' });
+        document.querySelectorAll('.fade-up, .mask-reveal, .scale-reveal, .clip-reveal').forEach(el => revealObserver.observe(el));
+
+        const parallaxElements = document.querySelectorAll('[data-parallax]');
+        let ticking = false;
+        function applyParallax() {
+            const vh = window.innerHeight;
+            parallaxElements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.bottom > -200 && rect.top < vh + 200) {
+                    const center = rect.top + rect.height / 2;
+                    const offset = (vh / 2 - center) * 0.16;
+                    el.style.transform = `translate3d(0, ${offset}px, 0)`;
+                }
+            });
+            ticking = false;
+        }
+        window.addEventListener('scroll', () => {
+            if (!ticking) { window.requestAnimationFrame(applyParallax); ticking = true; }
+        }, { passive: true });
+        applyParallax();
+    </script>
+    <script src="reservation.js"></script>
+</body>
+</html>

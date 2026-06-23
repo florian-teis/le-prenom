@@ -1,0 +1,8 @@
+# Phase démo : indexation bloquée.
+# Pour ouvrir le site aux moteurs, remplacer par :
+#   User-agent: *
+#   Allow: /
+User-agent: *
+Disallow: /
+
+Sitemap: https://florian-teis.github.io/le-prenom/sitemap.xml

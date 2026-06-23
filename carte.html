@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.documentElement.classList.add('js');</script>
+    <title>La Carte — Le Prénom, restaurant aux Sables-d'Olonne</title>
+    <meta name="description" content="La carte du Prénom aux Sables-d'Olonne : entrées, poissons de la criée, viandes du terroir vendéen et desserts faits maison. Formule déjeuner et ardoise qui change chaque jour.">
+    <meta name="keywords" content="carte Le Prénom, menu Sables d'Olonne, bistronomie, formule déjeuner, poisson criée, dessert maison, Vendée">
+    <meta name="author" content="Le Prénom">
+    <!-- TEMPORAIRE : bloque l'indexation Google pendant la phase démo. À retirer une fois le site validé. -->
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="canonical" href="https://florian-teis.github.io/le-prenom/carte.html">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Le Prénom">
+    <meta property="og:url" content="https://florian-teis.github.io/le-prenom/carte.html">
+    <meta property="og:title" content="La Carte — Le Prénom, restaurant aux Sables-d'Olonne">
+    <meta property="og:description" content="Entrées, poissons de la criée, viandes du terroir et desserts faits maison. Une ardoise qui change chaque jour.">
+    <meta property="og:image" content="https://florian-teis.github.io/le-prenom/assets/og-image.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="La Carte — Le Prénom">
+    <meta name="twitter:description" content="Entrées, poissons, viandes et desserts faits maison aux Sables-d'Olonne.">
+    <meta name="twitter:image" content="https://florian-teis.github.io/le-prenom/assets/og-image.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Menu",
+      "name": "Carte — Le Prénom",
+      "inLanguage": "fr",
+      "provider": {
+        "@type": "Restaurant",
+        "name": "Le Prénom",
+        "url": "https://florian-teis.github.io/le-prenom/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "261 Avenue François Mitterrand",
+          "addressLocality": "Les Sables-d'Olonne",
+          "postalCode": "85100",
+          "addressCountry": "FR"
+        }
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://florian-teis.github.io/le-prenom/"},
+        {"@type": "ListItem", "position": 2, "name": "La Carte", "item": "https://florian-teis.github.io/le-prenom/carte.html"}
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <button class="nav-burger" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links nav-left">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="lamaison.html">La Maison</a></li>
+        </ul>
+        <a href="index.html" class="nav-logo" aria-label="Le Prénom — Accueil">
+            <img class="logo-light" src="assets/logo-white.png" alt="Le Prénom">
+            <img class="logo-dark" src="assets/logo-color.png" alt="">
+        </a>
+        <ul class="nav-links nav-right">
+            <li><a href="carte.html" class="active">La Carte</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="nav-mobile">
+            <a href="index.html">Accueil</a>
+            <a href="lamaison.html">La Maison</a>
+            <a href="carte.html" class="active">La Carte</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="#reserver" class="btn" data-reserve>Réserver une table</a>
+        </div>
+    </nav>
+
+    <!-- SUB-HERO -->
+    <header class="subhero">
+        <div class="subhero-image" style="background-image: url('assets/carte-hero.jpg?v=2');"></div>
+        <div class="subhero-content">
+            <p class="subhero-overline reveal">Le Prénom</p>
+            <h1 class="subhero-title reveal">La <em>Carte</em></h1>
+        </div>
+    </header>
+
+    <!-- CARTE -->
+    <section>
+        <div class="long-content">
+            <a href="index.html" class="back-link">Retour à l'accueil</a>
+            <p class="lead reveal" style="text-align: center;">
+                Une ardoise qui se réécrit presque chaque jour, au rythme du marché
+                et de la criée. Voici un aperçu de la saison.
+            </p>
+        </div>
+
+        <!-- FORMULE -->
+        <div class="formule-band reveal">
+            <p class="formule-label">La formule déjeuner</p>
+            <p class="formule-title">Entrée + Plat + Dessert · <em>20 €</em></p>
+            <p class="formule-sub">Servie le midi, du lundi au samedi · Formule week-end le vendredi et samedi soir</p>
+        </div>
+
+        <div class="menu-section">
+
+            <!-- ENTRÉES -->
+            <div class="menu-category reveal">
+                <h2 class="menu-cat-title">Les Entrées</h2>
+                <p class="menu-cat-sub">Pour commencer</p>
+
+                <div class="menu-item">
+                    <div class="menu-item-head">
+                        <span class="menu-item-name">Ceviche de thon</span>
+                        <span class="menu-item-dots"></span>
+                        <span class="menu-item-tag">Signature</span>
+                    </div>
+                    <p class="menu-item-desc">Thon mariné, ses condiments, salade de jeunes pousses et huile vierge.</p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-head">
+                        <span class="menu-item-name">Gaspacho andalou</span>
+                        <span class="menu-item-dots"></span>
+                        <span class="menu-item-tag">De saison</span>
+                    </div>
+                    <p class="menu-item-desc">Velouté de tomate glacé, billes de melon, filet d'huile d'olive.</p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-head">
+                        <span class="menu-item-name">Croustillant croquant</span>
+                        <span class="menu-item-dots"></span>
+                    </div>
+                    <p class="menu-item-desc">Petit croustillant pané, crémeux de légume de saison, herbes fraîches.</p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-head">
+                        <span class="menu-item-name">Tartelette façon César</span>
+                        <span class="menu-item-dots"></span>
+                    </div>
+                    <p class="menu-item-desc">Sablé au parmesan, anchois, sucrine, crème césar et copeaux.</p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-head">
+                        <span class="menu-item-name">Velouté du moment</span>
+                        <span class="menu-item-dots"></span>
+                    </div>
+                    <p class="menu-item-desc">Selon le marché du jour, crème montée et croûtons maison.</p>
+                </div>
+            </div>
+
+            <!-- POISSONS -->
+            <div class="menu-category reveal">
+                <h2 class="menu-cat-title">La Mer</h2>
+                <p class="menu-cat-sub">Poissons de la criée</p>
+
+                <div class="menu-item">
+                    <div class="menu-item-head">
+                        <span class="menu-item-name">Dos de lieu noir</span>
+                        <span class="menu-item-dots"></span>
+                    </div>
+                    <p class="menu-item-desc">Crème de chou vert, mousseline de carotte, millefeuille de pomme de terre.</p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-head">
+                        <span class="menu-item-name">Saumon mi-cuit</span>
+                        <span class="menu-item-dots"></span>
+                    </div>
+                    <p class="menu-item-desc">Quinoa, jus vert d'herbes, légumes croquants et pickles.</p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-head">
+                        <span class="menu-item-name">Poisson du jour</span>
+                        <span class="menu-item-dots"></span>
+                        <span class="menu-item-tag">Arrivage</span>
+                    </div>
+                    <p class="menu-item-desc">Bar, merlu ou maigre selon la pêche, riz crémeux et sauce de saison.</p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-head">
+                        <span class="menu-item-name">Thon snacké de ligne</span>
+                        <span class="menu-item-dots"></span>
+                        <span class="menu-item-tag">L'été</span>
+                    </div>
+                    <p class="menu-item-desc">Juste snacké, purée acidulée, condiments et herbes fraîches.</p>
+                </div>
+            </div>
+
+            <!-- VIANDES -->
+            <div class="menu-category reveal">
+                <h2 class="menu-cat-title">Les Viandes</h2>
+                <p class="menu-cat-sub">Du terroir vendéen</p>
+
+                <div class="menu-item">
+                    <div class="menu-item-head">
+                        <span class="menu-item-name">Pavé de bœuf sélection</span>
+                        <span class="menu-item-dots"></span>
+                        <span class="menu-item-tag">Signature</span>
+                    </div>
+                    <p class="menu-item-desc">Pommes de terre au four, salade de jeunes pousses, sauce béarnaise maison.</p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-head">
+                        <span class="menu-item-name">Onglet de bœuf</span>
+                        <span class="menu-item-dots"></span>
+                    </div>
+                    <p class="menu-item-desc">Gratin de pomme de terre fondant, jeunes pousses, jus corsé.</p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-head">
+                        <span class="menu-item-name">Sot-l'y-laisse de dinde</span>
+                        <span class="menu-item-dots"></span>
+                    </div>
+                    <p class="menu-item-desc">Façon risotto de quinoa aux petits légumes, crémeux et gourmand.</p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-head">
+                        <span class="menu-item-name">Cochon de Vendée</span>
+                        <span class="menu-item-dots"></span>
+                    </div>
+                    <p class="menu-item-desc">Cuisson lente, légumes glacés de saison, jus réduit aux épices douces.</p>
+                </div>
+            </div>
+
+            <!-- DESSERTS -->
+            <div class="menu-category reveal">
+                <h2 class="menu-cat-title">Les Desserts</h2>
+                <p class="menu-cat-sub">Faits maison</p>
+
+                <div class="menu-item">
+                    <div class="menu-item-head">
+                        <span class="menu-item-name">Financier noisette</span>
+                        <span class="menu-item-dots"></span>
+                    </div>
+                    <p class="menu-item-desc">Crème montée, sorbet de saison, coulis et éclats croustillants.</p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-head">
+                        <span class="menu-item-name">Tartelette aux fruits rouges</span>
+                        <span class="menu-item-dots"></span>
+                        <span class="menu-item-tag">De saison</span>
+                    </div>
+                    <p class="menu-item-desc">Sablé, crémeux vanille, fruits frais et coulis de saison.</p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-head">
+                        <span class="menu-item-name">Mi-cuit chocolat</span>
+                        <span class="menu-item-dots"></span>
+                    </div>
+                    <p class="menu-item-desc">Cœur coulant, fleur de sel, crème glacée vanille bourbon.</p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-head">
+                        <span class="menu-item-name">Sablé breton</span>
+                        <span class="menu-item-dots"></span>
+                    </div>
+                    <p class="menu-item-desc">Ganache chocolat blanc &amp; citron vert, glace fraise-basilic.</p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-head">
+                        <span class="menu-item-name">Mille-feuille du Prénom</span>
+                        <span class="menu-item-dots"></span>
+                        <span class="menu-item-tag">Signature</span>
+                    </div>
+                    <p class="menu-item-desc">Crémeux chocolat noir &amp; whisky, caramel beurre salé, glace vanille.</p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-head">
+                        <span class="menu-item-name">Café ou thé gourmand</span>
+                        <span class="menu-item-dots"></span>
+                    </div>
+                    <p class="menu-item-desc">Un assortiment de mignardises maison du moment.</p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-head">
+                        <span class="menu-item-name">Assiette de fromages affinés</span>
+                        <span class="menu-item-dots"></span>
+                    </div>
+                    <p class="menu-item-desc">Sélection au lait cru, confiture de l'instant, pain aux raisins.</p>
+                </div>
+            </div>
+
+            <!-- À BOIRE -->
+            <div class="menu-category reveal">
+                <h2 class="menu-cat-title">À Boire</h2>
+                <p class="menu-cat-sub">Pour accompagner</p>
+
+                <div class="menu-item">
+                    <div class="menu-item-head">
+                        <span class="menu-item-name">Carte des vins</span>
+                        <span class="menu-item-dots"></span>
+                        <span class="menu-item-tag">Au verre & bouteille</span>
+                    </div>
+                    <p class="menu-item-desc">Une sélection vivante de vignerons, du Pays Nantais à la Loire. Conseil en salle.</p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-head">
+                        <span class="menu-item-name">Apéritifs &amp; sans alcool</span>
+                        <span class="menu-item-dots"></span>
+                    </div>
+                    <p class="menu-item-desc">Cocktails du moment, limonades et softs maison.</p>
+                </div>
+            </div>
+
+            <p class="menu-note reveal">
+                Carte indicative, susceptible d'évoluer chaque jour selon le marché<br>
+                et les arrivages de la criée. Tous nos plats sont faits maison.
+            </p>
+
+            <p class="reveal" style="text-align: center; margin-top: 3rem;">
+                <a href="#reserver" class="btn" data-reserve>Réserver une table</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- PIED DE PAGE -->
+    <footer class="footer" id="contact">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="nav-logo" aria-label="Le Prénom"><img src="assets/logo-white.png" alt="Le Prénom"></a>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/restaurantleprenom/" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s0 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.9.07s-3.63 0-4.9-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 01-1.38-.9 3.7 3.7 0 01-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.21 15.6 2.2 15.2 2.2 12s0-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.4 2.21 8.8 2.2 12 2.2zm0 1.8c-3.15 0-3.52.01-4.76.07-.9.04-1.38.19-1.7.32-.43.16-.74.36-1.06.68-.32.32-.52.63-.68 1.06-.13.32-.28.8-.32 1.7C3.21 8.48 3.2 8.85 3.2 12s.01 3.52.07 4.76c.04.9.19 1.38.32 1.7.16.43.36.74.68 1.06.32.32.63.52 1.06.68.32.13.8.28 1.7.32 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c.9-.04 1.38-.19 1.7-.32.43-.16.74-.36 1.06-.68.32-.32.52-.63.68-1.06.13-.32.28-.8.32-1.7.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.04-.9-.19-1.38-.32-1.7a2.85 2.85 0 00-.68-1.06 2.85 2.85 0 00-1.06-.68c-.32-.13-.8-.28-1.7-.32C15.52 4.01 15.15 4 12 4zm0 3.06A4.94 4.94 0 1112 17a4.94 4.94 0 010-9.88zm0 1.8a3.14 3.14 0 100 6.28 3.14 3.14 0 000-6.28zm5.14-.96a1.15 1.15 0 110 2.3 1.15 1.15 0 010-2.3z"/></svg>
+                    </a>
+                    <a href="https://www.facebook.com/RestaurantLePrenom/" target="_blank" rel="noopener" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5h2.5V5.5H14c-2 0-3.4 1.5-3.4 3.6v1.6H8.3V14h2.3v6h3v-6h2.4l.4-3.3h-2.8V9.3c0-.5.3-.8.9-.8z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Adresse</h4>
+                <ul>
+                    <li>261 Avenue François Mitterrand</li>
+                    <li>85100 Les Sables-d'Olonne</li>
+                    <li style="margin-top: 1rem;">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Le+Pr%C3%A9nom+261+Avenue+Fran%C3%A7ois+Mitterrand+Les+Sables-d%27Olonne" target="_blank" rel="noopener">Itinéraire →</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Horaires</h4>
+                <ul>
+                    <li>Midi : <span class="accent">7j/7</span>, de 12h à 14h30</li>
+                    <li>Soir : ven. &amp; sam., de 19h à 22h</li>
+                    <li style="margin-top: 1rem; color: rgba(255,255,255,0.5);">Réservation conseillée</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+33767252031">07 67 25 20 31</a></li>
+                    <li style="margin-top: 1rem;">
+                        <a href="#reserver" class="link-discrete" data-reserve>Réserver une table</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Le Prénom · Tous droits réservés</p>
+            <p>Les Sables-d'Olonne · Vendée</p>
+        </div>
+    </footer>
+
+    <!-- Bouton flottant « Réserver une table » -->
+    <a href="#reserver" class="reserve-fab" data-reserve aria-label="Réserver une table">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1V3a1 1 0 0 1 1-1zM5 9v10h14V9H5z"/></svg>
+        <span>Réserver une table</span>
+    </a>
+
+    <script>
+        const nav = document.querySelector('.nav');
+        const setNav = () => nav.classList.toggle('scrolled', window.scrollY > 70);
+        window.addEventListener('scroll', setNav, { passive: true });
+        setNav();
+
+        const burger = document.querySelector('.nav-burger');
+        burger.addEventListener('click', () => {
+            const open = nav.classList.toggle('open');
+            burger.classList.toggle('open', open);
+            burger.setAttribute('aria-expanded', open);
+            document.body.style.overflow = open ? 'hidden' : '';
+        });
+        document.querySelectorAll('.nav-mobile a').forEach(a => a.addEventListener('click', () => {
+            nav.classList.remove('open'); burger.classList.remove('open'); document.body.style.overflow = '';
+        }));
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+    <script src="reservation.js"></script>
+</body>
+</html>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.documentElement.classList.add('js');</script>
+    <title>Le Prénom — Restaurant bistronomique aux Sables-d'Olonne</title>
+    <meta name="description" content="Le Prénom, restaurant bistronomique aux Sables-d'Olonne. Cuisine de saison faite maison, poissons de la criée et terroir vendéen. Ici, on s'appelle par son prénom. Réservation 07 67 25 20 31.">
+    <meta name="keywords" content="restaurant Sables d'Olonne, bistronomie Sables d'Olonne, Le Prénom, restaurant Vendée, cuisine de saison, poisson, criée, avenue François Mitterrand">
+    <meta name="author" content="Le Prénom">
+    <!-- TEMPORAIRE : bloque l'indexation Google pendant la phase démo. À retirer une fois le site validé. -->
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="geo.region" content="FR-85">
+    <meta name="geo.placename" content="Les Sables-d'Olonne">
+    <meta name="geo.position" content="46.4969;-1.7831">
+    <meta name="ICBM" content="46.4969, -1.7831">
+
+    <link rel="canonical" href="https://florian-teis.github.io/le-prenom/">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="restaurant.restaurant">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Le Prénom">
+    <meta property="og:url" content="https://florian-teis.github.io/le-prenom/">
+    <meta property="og:title" content="Le Prénom — Restaurant bistronomique aux Sables-d'Olonne">
+    <meta property="og:description" content="Cuisine de saison faite maison, poissons de la criée et terroir vendéen. Ici, on s'appelle par son prénom.">
+    <meta property="og:image" content="https://florian-teis.github.io/le-prenom/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Le Prénom — Restaurant bistronomique aux Sables-d'Olonne">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Le Prénom — Restaurant bistronomique aux Sables-d'Olonne">
+    <meta name="twitter:description" content="Cuisine de saison faite maison aux Sables-d'Olonne. Ici, on s'appelle par son prénom.">
+    <meta name="twitter:image" content="https://florian-teis.github.io/le-prenom/assets/og-image.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Schema.org Restaurant -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "@id": "https://florian-teis.github.io/le-prenom/#restaurant",
+      "name": "Le Prénom",
+      "description": "Restaurant bistronomique aux Sables-d'Olonne. Cuisine de saison faite maison, poissons de la criée et terroir vendéen. Ici, on s'appelle par son prénom.",
+      "image": [
+        "https://florian-teis.github.io/le-prenom/assets/hero.jpg",
+        "https://florian-teis.github.io/le-prenom/assets/plat-2.jpg",
+        "https://florian-teis.github.io/le-prenom/assets/histoire.jpg"
+      ],
+      "logo": "https://florian-teis.github.io/le-prenom/assets/favicon-512.png",
+      "url": "https://florian-teis.github.io/le-prenom/",
+      "telephone": "+33767252031",
+      "priceRange": "€€",
+      "servesCuisine": ["Française", "Bistronomie", "Poisson", "Cuisine de saison"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "261 Avenue François Mitterrand",
+        "addressLocality": "Les Sables-d'Olonne",
+        "postalCode": "85100",
+        "addressRegion": "Vendée",
+        "addressCountry": "FR"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": 46.4969, "longitude": -1.7831 },
+      "hasMap": "https://www.google.com/maps/search/?api=1&query=Le+Pr%C3%A9nom+261+Avenue+Fran%C3%A7ois+Mitterrand+Les+Sables-d%27Olonne",
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "12:00", "closes": "14:30" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "19:00", "closes": "22:00" }
+      ],
+      "acceptsReservations": "True",
+      "menu": "https://florian-teis.github.io/le-prenom/carte.html",
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "641" },
+      "sameAs": [
+        "https://www.instagram.com/restaurantleprenom/",
+        "https://www.facebook.com/RestaurantLePrenom/"
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <button class="nav-burger" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links nav-left">
+            <li><a href="#top" class="active">Accueil</a></li>
+            <li><a href="lamaison.html">La Maison</a></li>
+        </ul>
+        <a href="index.html" class="nav-logo" aria-label="Le Prénom — Accueil">
+            <img class="logo-light" src="assets/logo-white.png" alt="Le Prénom">
+            <img class="logo-dark" src="assets/logo-color.png" alt="">
+        </a>
+        <ul class="nav-links nav-right">
+            <li><a href="carte.html">La Carte</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-mobile">
+            <a href="#top" class="active">Accueil</a>
+            <a href="lamaison.html">La Maison</a>
+            <a href="carte.html">La Carte</a>
+            <a href="#contact">Contact</a>
+            <a href="#reserver" class="btn" data-reserve>Réserver une table</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" id="top">
+        <div class="hero-image" style="background-image: url('assets/hero.jpg');"></div>
+        <div class="hero-content">
+            <h1 class="hero-title reveal"><img class="hero-wordmark" src="assets/logo-wordmark-white.png" alt="Le Prénom"></h1>
+        </div>
+        <div class="hero-scroll">Découvrir</div>
+    </header>
+
+    <!-- CONCEPT -->
+    <section class="concept" id="concept">
+        <div class="concept-inner">
+            <p class="concept-overline reveal">Le Prénom</p>
+            <blockquote class="concept-quote reveal">
+                « Ici, pas de chichis ni de manières :<br>
+                <em>on s'appelle par son prénom.</em> »
+            </blockquote>
+            <p class="concept-text reveal">
+                C'est toute notre philosophie. On réserve à votre prénom, on vous accueille
+                avec chaleur, et on cuisine avec la même envie chaque jour. Une table
+                conviviale où l'on revient autant pour l'assiette que pour l'ambiance.
+            </p>
+        </div>
+    </section>
+
+    <!-- L'ÉQUIPE -->
+    <section class="equipe" id="equipe">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-overline center reveal">La Maison</p>
+                <h2 class="section-title reveal">Une équipe,<br>une <em>même</em> envie</h2>
+            </div>
+
+            <div class="equipe-rows">
+                <article class="equipe-row">
+                    <div class="equipe-photo img-reveal parallax-wrap">
+                        <div class="parallax-img" data-parallax-img style="background-image: url('assets/team-cuisine.jpg');"></div>
+                    </div>
+                    <div class="equipe-content">
+                        <p class="equipe-overline reveal">En cuisine</p>
+                        <h3 class="equipe-name reveal">Une cuisine<br>qui a du <em>cœur</em></h3>
+                        <p class="equipe-role reveal">Fait maison, chaque jour</p>
+                        <p class="equipe-bio reveal">
+                            Derrière le piano, une brigade soudée qui travaille le produit
+                            frais du matin : poissons de la criée, légumes de saison,
+                            viandes du terroir vendéen. Rien de figé, tout part du marché.
+                        </p>
+                        <p class="equipe-bio reveal">
+                            L'ardoise se réécrit presque chaque jour, au gré des arrivages
+                            et de l'inspiration. Une cuisine sincère, dressée avec soin
+                            et générosité.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="equipe-row reverse">
+                    <div class="equipe-photo img-reveal parallax-wrap">
+                        <div class="parallax-img" data-parallax-img style="background-image: url('assets/team-salle.jpg');"></div>
+                    </div>
+                    <div class="equipe-content">
+                        <p class="equipe-overline reveal">En salle</p>
+                        <h3 class="equipe-name reveal">Comme à la <em>maison</em></h3>
+                        <p class="equipe-role reveal">Convivialité & simplicité</p>
+                        <p class="equipe-bio reveal">
+                            Une salle lumineuse, des plantes, du bois clair et des couleurs
+                            qui réchauffent. On y est reçu par votre prénom, avec le sourire
+                            et beaucoup d'attention.
+                        </p>
+                        <p class="equipe-bio reveal">
+                            Un verre conseillé, un plat raconté, une terrasse aux beaux jours :
+                            c'est ce supplément d'âme qui fait que l'on devient, très vite,
+                            un habitué.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOTRE HISTOIRE -->
+    <section class="histoire" id="histoire">
+        <div class="container">
+            <div class="histoire-grid">
+                <div class="histoire-image img-reveal parallax-wrap">
+                    <div class="parallax-img" data-parallax-img style="background-image: url('assets/histoire.jpg');"></div>
+                </div>
+                <div class="histoire-content">
+                    <p class="section-overline reveal">Notre histoire</p>
+                    <h2 class="section-title reveal">Une table<br>de <em>quartier</em></h2>
+                    <p class="section-text reveal">
+                        Avenue François Mitterrand, aux Sables-d'Olonne, Le Prénom est
+                        cette adresse de quartier où l'on se sent tout de suite bien.
+                        Une table née d'une envie simple : recevoir les gens comme on
+                        aime l'être soi-même.
+                    </p>
+                    <p class="section-text reveal">
+                        On y travaille le frais et le local, sans esbroufe ni fausses
+                        promesses. Et chaque assiette arrive avec gourmandise et un
+                        vrai brin d'attention.
+                    </p>
+                    <p class="section-text reveal">
+                        Le reste, c'est une affaire d'ambiance et de fidélité :
+                        du plus jeune client au doyen des habitués, chacun y a sa place.
+                        Et c'est sans doute pour ça qu'on y revient.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PLATS SIGNATURES -->
+    <section class="plats" id="plats">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-overline center reveal">À l'ardoise</p>
+                <h2 class="section-title reveal">Quelques <em>signatures</em></h2>
+            </div>
+
+            <div class="plats-grid">
+                <article class="plat-card reveal">
+                    <div class="plat-image img-reveal parallax-wrap">
+                        <div class="parallax-img" data-parallax-img style="background-image: url('assets/plat-1.jpg');"></div>
+                    </div>
+                    <h3 class="plat-name">Poisson de la criée</h3>
+                    <p class="plat-desc">Selon l'arrivage, mousseline de légumes de saison, jus corsé</p>
+                </article>
+
+                <article class="plat-card reveal">
+                    <div class="plat-image img-reveal parallax-wrap">
+                        <div class="parallax-img" data-parallax-img style="background-image: url('assets/plat-2.jpg');"></div>
+                    </div>
+                    <h3 class="plat-name">Thon snacké de ligne</h3>
+                    <p class="plat-desc">Purée acidulée, condiments du moment, herbes fraîches</p>
+                </article>
+
+                <article class="plat-card reveal">
+                    <div class="plat-image img-reveal parallax-wrap">
+                        <div class="parallax-img" data-parallax-img style="background-image: url('assets/plat-3.jpg');"></div>
+                    </div>
+                    <h3 class="plat-name">Pavé de bœuf sélection</h3>
+                    <p class="plat-desc">Pommes de terre fondantes, salade de jeunes pousses, sauce béarnaise</p>
+                </article>
+            </div>
+
+            <div class="plats-cta reveal">
+                <a href="carte.html" class="link-discrete">Voir toute la carte →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SAVEURS -->
+    <section class="saveurs" id="saveurs">
+        <div class="container">
+            <div class="saveurs-intro">
+                <p class="section-overline center reveal">Au gré du marché</p>
+                <h2 class="section-title reveal">Du producteur <em>à l'assiette</em></h2>
+                <p class="section-text reveal">
+                    Circuits courts et produits de saison : voici un aperçu
+                    de ce qui vous attend dans l'assiette.
+                </p>
+            </div>
+
+            <div class="saveurs-grid">
+                <article class="saveur-card reveal">
+                    <a href="carte.html" aria-label="Voir les entrées">
+                        <div class="saveur-image img-reveal parallax-wrap">
+                            <div class="parallax-img" data-parallax-img style="background-image: url('assets/cat-entrees.jpg');"></div>
+                        </div>
+                        <h3 class="saveur-name">Les entrées</h3>
+                        <p class="saveur-tagline">Ceviche, gaspacho, croustillants</p>
+                    </a>
+                </article>
+
+                <article class="saveur-card reveal">
+                    <a href="carte.html" aria-label="Voir les poissons">
+                        <div class="saveur-image img-reveal parallax-wrap">
+                            <div class="parallax-img" data-parallax-img style="background-image: url('assets/cat-poissons.jpg');"></div>
+                        </div>
+                        <h3 class="saveur-name">La mer</h3>
+                        <p class="saveur-tagline">Poissons de la criée, au fil des arrivages</p>
+                    </a>
+                </article>
+
+                <article class="saveur-card reveal">
+                    <a href="carte.html" aria-label="Voir les viandes">
+                        <div class="saveur-image img-reveal parallax-wrap">
+                            <div class="parallax-img" data-parallax-img style="background-image: url('assets/cat-viandes.jpg');"></div>
+                        </div>
+                        <h3 class="saveur-name">Les viandes</h3>
+                        <p class="saveur-tagline">Terroir vendéen, cuissons justes</p>
+                    </a>
+                </article>
+
+                <article class="saveur-card reveal">
+                    <a href="carte.html" aria-label="Voir les desserts">
+                        <div class="saveur-image img-reveal parallax-wrap">
+                            <div class="parallax-img" data-parallax-img style="background-image: url('assets/cat-desserts.jpg');"></div>
+                        </div>
+                        <h3 class="saveur-name">Les desserts</h3>
+                        <p class="saveur-tagline">Faits maison, gourmands à souhait</p>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- AVIS CLIENTS (Google) -->
+    <section class="avis" id="avis">
+        <div class="avis-head">
+            <p class="section-overline center reveal">Avis Google</p>
+            <h2 class="section-title reveal">Ils en parlent <em>mieux que nous</em></h2>
+            <p class="avis-rating reveal"><span class="stars">★★★★★</span> 4,8 / 5 · plus de 600 avis</p>
+        </div>
+
+        <div class="avis-marquee">
+            <div class="avis-track">
+                <!-- Série d'avis (dupliquée plus bas pour le défilement continu) -->
+                <article class="avis-card"><div class="avis-stars">★★★★★</div><p class="avis-text">« Nous avons fait un repas excellent. Qualité des produits du début à la fin. »</p><p class="avis-author">Pascal H.</p></article>
+                <article class="avis-card"><div class="avis-stars">★★★★★</div><p class="avis-text">« Dès notre arrivée jusqu'à notre départ, tout est parfait, absolument parfait. Un grand merci à l'ensemble du personnel. »</p><p class="avis-author">Martine O.</p></article>
+                <article class="avis-card"><div class="avis-stars">★★★★★</div><p class="avis-text">« Belle découverte aux Sables. Plats très colorés et servis rapidement, personnel attentionné et très belle décoration. »</p><p class="avis-author">Juju</p></article>
+                <article class="avis-card"><div class="avis-stars">★★★★★</div><p class="avis-text">« Super restaurant ! Vraiment une très belle découverte ! Je recommande vivement ! »</p><p class="avis-author">Karen</p></article>
+                <article class="avis-card"><div class="avis-stars">★★★★<span class="star-empty">★</span></div><p class="avis-text">« Très bon et bien présenté. Un prix vraiment correct et un service rapide. »</p><p class="avis-author">Shortsam</p></article>
+                <article class="avis-card"><div class="avis-stars">★★★★★</div><p class="avis-text">« Délicieux, fait maison ! Le service était impeccable, les serveurs sont souriants et disponibles. »</p><p class="avis-author">Sarah O.</p></article>
+                <article class="avis-card"><div class="avis-stars">★★★★★</div><p class="avis-text">« Les plats sont délicieux du début à la fin : entrée, plat et dessert parfaitement préparés et joliment présentés. »</p><p class="avis-author">Erwan M.</p></article>
+                <article class="avis-card"><div class="avis-stars">★★★★★</div><p class="avis-text">« Tout était excellent et parfait. Cuisine créative et généreuse. Si vous êtes de passage aux Sables, à tester absolument ! »</p><p class="avis-author">Izzy</p></article>
+                <!-- duplicata pour la boucle -->
+                <article class="avis-card" aria-hidden="true"><div class="avis-stars">★★★★★</div><p class="avis-text">« Nous avons fait un repas excellent. Qualité des produits du début à la fin. »</p><p class="avis-author">Pascal H.</p></article>
+                <article class="avis-card" aria-hidden="true"><div class="avis-stars">★★★★★</div><p class="avis-text">« Dès notre arrivée jusqu'à notre départ, tout est parfait, absolument parfait. Un grand merci à l'ensemble du personnel. »</p><p class="avis-author">Martine O.</p></article>
+                <article class="avis-card" aria-hidden="true"><div class="avis-stars">★★★★★</div><p class="avis-text">« Belle découverte aux Sables. Plats très colorés et servis rapidement, personnel attentionné et très belle décoration. »</p><p class="avis-author">Juju</p></article>
+                <article class="avis-card" aria-hidden="true"><div class="avis-stars">★★★★★</div><p class="avis-text">« Super restaurant ! Vraiment une très belle découverte ! Je recommande vivement ! »</p><p class="avis-author">Karen</p></article>
+                <article class="avis-card" aria-hidden="true"><div class="avis-stars">★★★★<span class="star-empty">★</span></div><p class="avis-text">« Très bon et bien présenté. Un prix vraiment correct et un service rapide. »</p><p class="avis-author">Shortsam</p></article>
+                <article class="avis-card" aria-hidden="true"><div class="avis-stars">★★★★★</div><p class="avis-text">« Délicieux, fait maison ! Le service était impeccable, les serveurs sont souriants et disponibles. »</p><p class="avis-author">Sarah O.</p></article>
+                <article class="avis-card" aria-hidden="true"><div class="avis-stars">★★★★★</div><p class="avis-text">« Les plats sont délicieux du début à la fin : entrée, plat et dessert parfaitement préparés et joliment présentés. »</p><p class="avis-author">Erwan M.</p></article>
+                <article class="avis-card" aria-hidden="true"><div class="avis-stars">★★★★★</div><p class="avis-text">« Tout était excellent et parfait. Cuisine créative et généreuse. Si vous êtes de passage aux Sables, à tester absolument ! »</p><p class="avis-author">Izzy</p></article>
+            </div>
+        </div>
+
+        <p class="avis-cta reveal">
+            <a href="https://www.google.com/maps/search/?api=1&query=Le+Pr%C3%A9nom+261+Avenue+Fran%C3%A7ois+Mitterrand+Les+Sables-d%27Olonne" target="_blank" rel="noopener" class="link-discrete">Voir tous les avis sur Google →</a>
+        </p>
+    </section>
+
+    <!-- PIED DE PAGE / CONTACT -->
+    <footer class="footer" id="contact">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="nav-logo" aria-label="Le Prénom"><img src="assets/logo-white.png" alt="Le Prénom"></a>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/restaurantleprenom/" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s0 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.9.07s-3.63 0-4.9-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 01-1.38-.9 3.7 3.7 0 01-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.21 15.6 2.2 15.2 2.2 12s0-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.4 2.21 8.8 2.2 12 2.2zm0 1.8c-3.15 0-3.52.01-4.76.07-.9.04-1.38.19-1.7.32-.43.16-.74.36-1.06.68-.32.32-.52.63-.68 1.06-.13.32-.28.8-.32 1.7C3.21 8.48 3.2 8.85 3.2 12s.01 3.52.07 4.76c.04.9.19 1.38.32 1.7.16.43.36.74.68 1.06.32.32.63.52 1.06.68.32.13.8.28 1.7.32 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c.9-.04 1.38-.19 1.7-.32.43-.16.74-.36 1.06-.68.32-.32.52-.63.68-1.06.13-.32.28-.8.32-1.7.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.04-.9-.19-1.38-.32-1.7a2.85 2.85 0 00-.68-1.06 2.85 2.85 0 00-1.06-.68c-.32-.13-.8-.28-1.7-.32C15.52 4.01 15.15 4 12 4zm0 3.06A4.94 4.94 0 1112 17a4.94 4.94 0 010-9.88zm0 1.8a3.14 3.14 0 100 6.28 3.14 3.14 0 000-6.28zm5.14-.96a1.15 1.15 0 110 2.3 1.15 1.15 0 010-2.3z"/></svg>
+                    </a>
+                    <a href="https://www.facebook.com/RestaurantLePrenom/" target="_blank" rel="noopener" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5h2.5V5.5H14c-2 0-3.4 1.5-3.4 3.6v1.6H8.3V14h2.3v6h3v-6h2.4l.4-3.3h-2.8V9.3c0-.5.3-.8.9-.8z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Adresse</h4>
+                <ul>
+                    <li>261 Avenue François Mitterrand</li>
+                    <li>85100 Les Sables-d'Olonne</li>
+                    <li style="margin-top: 1rem;">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Le+Pr%C3%A9nom+261+Avenue+Fran%C3%A7ois+Mitterrand+Les+Sables-d%27Olonne" target="_blank" rel="noopener">Itinéraire →</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Horaires</h4>
+                <ul>
+                    <li>Midi : <span class="accent">7j/7</span>, de 12h à 14h30</li>
+                    <li>Soir : ven. &amp; sam., de 19h à 22h</li>
+                    <li style="margin-top: 1rem; color: rgba(255,255,255,0.5);">Réservation conseillée</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+33767252031">07 67 25 20 31</a></li>
+                    <li style="margin-top: 1rem;">
+                        <a href="#reserver" class="link-discrete" data-reserve>Réserver une table</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Le Prénom · Tous droits réservés</p>
+            <p>Les Sables-d'Olonne · Vendée</p>
+        </div>
+    </footer>
+
+    <!-- Bouton flottant « Réserver une table » -->
+    <a href="#reserver" class="reserve-fab" data-reserve aria-label="Réserver une table">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1V3a1 1 0 0 1 1-1zM5 9v10h14V9H5z"/></svg>
+        <span>Réserver une table</span>
+    </a>
+
+    <script>
+        // Navbar : transparent en haut → blanc après un peu de scroll
+        const nav = document.querySelector('.nav');
+        const setNav = () => nav.classList.toggle('scrolled', window.scrollY > 70);
+        window.addEventListener('scroll', setNav, { passive: true });
+        setNav();
+
+        // Menu burger (mobile)
+        const burger = document.querySelector('.nav-burger');
+        burger.addEventListener('click', () => {
+            const open = nav.classList.toggle('open');
+            burger.classList.toggle('open', open);
+            burger.setAttribute('aria-expanded', open);
+            document.body.style.overflow = open ? 'hidden' : '';
+        });
+        document.querySelectorAll('.nav-mobile a').forEach(a => a.addEventListener('click', () => {
+            nav.classList.remove('open');
+            burger.classList.remove('open');
+            document.body.style.overflow = '';
+        }));
+
+        // Révélations au scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('.reveal, .img-reveal').forEach(el => observer.observe(el));
+
+        // Parallaxe douce sur les images
+        const parallaxImages = document.querySelectorAll('[data-parallax-img]');
+        let ticking = false;
+        function applyParallax() {
+            const vh = window.innerHeight;
+            parallaxImages.forEach(img => {
+                const rect = img.parentElement.getBoundingClientRect();
+                if (rect.bottom > -200 && rect.top < vh + 200) {
+                    const center = rect.top + rect.height / 2;
+                    const progress = (center - vh / 2) / (vh / 2 + rect.height / 2);
+                    img.style.setProperty('--par', `${-progress * 8}%`);
+                }
+            });
+            ticking = false;
+        }
+        window.addEventListener('scroll', () => {
+            if (!ticking) { window.requestAnimationFrame(applyParallax); ticking = true; }
+        }, { passive: true });
+        applyParallax();
+    </script>
+    <script src="reservation.js"></script>
+
+</body>
+</html>
